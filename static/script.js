@@ -16,7 +16,7 @@ document.getElementById("minimize").onclick = function (e) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    const person = {"positive":"Wow! I wish you the best of hoppiness always :)", "neutral":"*Carrot crunch* I'm all ears to hear more.", "negative":"I feel you. I'm sure it will only get better!"};
+    const person = {"":"Hello, there! I'm Bunny", "positive":"Wow! I wish you the best of hoppiness always :)", "neutral":"*Carrot crunch* I'm all ears to hear more.", "negative":"I feel you. I'm sure it will only get better!"};
     document.getElementById("speech").innerHTML = person[label];
     console.log(document.getElementById("speech").innerHTML, person[label])
 })

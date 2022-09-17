@@ -78,6 +78,7 @@ body {
 p {
   z-index: 1000000;
   text-align: center;
+  padding: 10px;
 }
 
 .centre {
@@ -86,7 +87,7 @@ p {
   align-content: center;
   background-color: white;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 30px;
   width: 200px;
   height: 100px;
 }
