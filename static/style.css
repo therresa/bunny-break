@@ -31,9 +31,13 @@ body {
   height: 200px; /* Should be removed. Only for demonstration */
 }
 
+/* Style the footer */
+.footer {
+  padding: 10px;
+}
+
 /* Ground */
 #background {
-  background-image: linear-gradient(rgb(174, 147, 196), rgb(217, 160, 169));
   position: absolute;
   bottom: 0;
   right: 0;
