@@ -12,7 +12,9 @@
 </head>
 
 <body>
-  BunnyBreak
+  <div class="level">
+    <h1 class="title is-1 level-item has-text-centered">BunnyBreak</h1>
+  </div>
 
   <div id="chatbox" class="block">
     <i class="fa-brands fas-rocketchat"></i>
@@ -24,7 +26,7 @@
       <div class="message-body">
         <form action="/chat" method="post">
           <div class="block">
-            <textarea class="textarea is-primary" placeholder="Type here ..."></textarea>
+            <textarea name="text-chat" class="textarea is-primary" placeholder="Type here ..." required></textarea>
           </div>
           <div class="block">
             <button class="button is-primary">That's It</button>
