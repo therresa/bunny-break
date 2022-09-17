@@ -15,4 +15,10 @@ document.getElementById("minimize").onclick = function (e) {
     document.getElementById('minimize').style.display = "none";
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+    const person = {"positive":"Wow! I wish you the best of hoppiness always :)", "neutral":"*Carrot crunch* I'm all ears to hear more.", "negative":"I feel you. I'm sure it will only get better!"};
+    document.getElementById("speech").innerHTML = person[label];
+    console.log(document.getElementById("speech").innerHTML, person[label])
+})
+
 

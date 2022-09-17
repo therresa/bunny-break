@@ -69,6 +69,22 @@ body {
   animation: changeColor 5s infinite alternate;
 }
 
+p {
+  z-index: 1000000;
+  text-align: center;
+}
+
+.centre {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  background-color: white;
+  justify-content: center;
+  border-radius: 10px;
+  width: 200px;
+  height: 100px;
+}
+
 #chatbox {
   position: absolute;
   width: max-content;
