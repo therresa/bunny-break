@@ -41,6 +41,19 @@ body {
   padding: 10px;
 }
 
+/* Ground */
+#background {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#foreground {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 #chatbox {
   position: absolute;
   width: 300px;
