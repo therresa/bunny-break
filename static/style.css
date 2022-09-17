@@ -57,10 +57,39 @@ body {
   right: 0;
 }
 
+#chatbox-title {
+  display: none;
+}
+
+@keyframes changeColor {
+  from {
+      color: #ffffff;
+  }
+  to {
+      color: #ff76e6;
+  }
+}
+
+#chatbox-icon {
+  cursor: pointer;
+  animation: changeColor 5s infinite alternate;
+}
+
 #chatbox {
   position: absolute;
-  width: 300px;
+  width: max-content;
   bottom: 0;
   right: 0;
 }
+
+
+#toggle-form-area {
+  width: 300px;
+  display: none;
+}
+
+#minimize {
+  display: none;
+}
+
 

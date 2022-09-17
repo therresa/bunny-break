@@ -12,6 +12,11 @@
 </head>
 
 <body>
+  <script>
+    var curTheme = "{{ theme|safe }}";
+  </script>
+
+
   <div class="level">
     <h1 class="title is-1 level-item has-text-centered">BunnyBreak</h1>
   </div>
@@ -34,16 +39,16 @@
   <img id="background" src="static/assets/ground/Foreground.svg">
 
   <div id="chatbox" class="block">
-    <i class="fa-brands fas-rocketchat"></i>
     <article class="message is-dark">
       <div class="message-header">
-        <p>Let's Chat!</p>
-        <button class="delete" aria-label="delete"></button>
+        <i id="chatbox-icon" class="fa fa-comments"></i>
+        <p id="chatbox-title">Let's Chat!</p>
+        <button id="minimize" class="delete" aria-label="delete"></button>
       </div>
-      <div class="message-body">
+      <div id="toggle-form-area" class="message-body">
         <form action="/chat" method="post">
           <div class="block">
-            <textarea name="text-chat" class="textarea is-primary" placeholder="Type here ..." required></textarea>
+            <textarea name="text-chat" class="textarea is-primary" placeholder="How was your day?" required></textarea>
           </div>
           <div class="block">
             <button class="button is-primary">That's It</button>
