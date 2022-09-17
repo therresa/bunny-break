@@ -2,29 +2,42 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 
 body {
-  background: green;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
 }
 
 /* Style the topnav links */
 .topnav a {
   float: left;
   display: block;
+  color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
 /* Style the content */
 .content {
-  background-color: green;
+  background-color: #ddd;
   padding: 10px;
   height: 200px; /* Should be removed. Only for demonstration */
 }
 
 /* Ground */
 #background {
+  background-image: linear-gradient(rgb(174, 147, 196), rgb(217, 160, 169));
   position: absolute;
   bottom: 0;
   right: 0;
