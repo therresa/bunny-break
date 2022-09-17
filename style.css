@@ -37,25 +37,4 @@ body {
   background-color: #f1f1f1;
   padding: 10px;
 }
-</style>
-</head>
-<body>
-
-<div class="topnav">
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-</div>
-
-<div class="content">
-  <h2>CSS Template</h2>
-  <p>A topnav, content and a footer.</p>
-</div>
-
-<div class="footer">
-  <p>Footer</p>
-</div>
-
-</body>
-</html>
 
