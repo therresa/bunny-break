@@ -41,3 +41,10 @@ body {
   padding: 10px;
 }
 
+#chatbox {
+  position: absolute;
+  width: 300px;
+  bottom: 0;
+  right: 0;
+}
+
