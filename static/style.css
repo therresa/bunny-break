@@ -38,6 +38,12 @@ body {
   padding: 10px;
 }
 
+#bunnyHead {
+  position: absolute;
+  bottom: 600rem;
+  right: 600rem;
+}
+
 /* Ground */
 #background {
   position: absolute;
