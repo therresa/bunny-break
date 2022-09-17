@@ -1,6 +1,46 @@
 /* Bulma Import */
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 
+/* Animations */
+
+#earLeft, #earRight {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@-webkit-keyframes swinging{
+  0%{
+    -webkit-transform: rotate(10deg);
+  }
+  50%{
+    -webkit-transform: rotate(-5deg)
+  }
+  100%{
+    -webkit-transform: rotate(10deg);
+  }
+}
+
+@keyframes swinging {
+  0% {
+    transform: rotate(10deg);
+  }
+  50%{
+    transform: rotate(-5deg)
+  }
+  100%{
+    transform: rotate(10deg);
+  }
+}
+
+.swingimage{
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+  animation: swinging 3.5s ease-in-out forwards infinite;
+}
+
 body {
   background: linear-gradient(rgb(195, 193, 255), rgb(255, 204, 254));
   height: 100vh;
@@ -38,10 +78,47 @@ body {
   padding: 10px;
 }
 
-#bunnyHead {
+/* Bunny */
+
+#bunnyHead, #earRight, #earLeft, #eyeRight, #eyeLeft, #mouth, #nose {
+  z-index: 1000;
   position: absolute;
-  bottom: 600rem;
-  right: 600rem;
+  bottom: 15rem;
+  left: 20rem;
+  scale: 70%;
+}
+
+#mouth, #nose {
+  bottom: 14rem;
+  left: 23.5rem;
+}
+
+#mouth {
+  bottom: 18rem;
+}
+
+#eyeLeft, #eyeRight {
+  animation-name: swingimage;
+  bottom: 20rem;
+  left: 23.3rem;
+}
+
+#eyeRight {
+  left: 27rem;
+}
+
+#earRight, #earLeft {
+  bottom: 20rem;
+  left: 21rem;
+}
+
+#earLeft {
+  left: 27rem;
+}
+
+#nose {
+  bottom: 19rem;
+  left: 25rem;
 }
 
 /* Ground */
@@ -91,5 +168,4 @@ body {
 #minimize {
   display: none;
 }
-
 
