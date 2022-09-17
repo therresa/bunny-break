@@ -1,12 +1,8 @@
 /* Bulma Import */
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 
-#grad {
-  /*background-image: linear-gradient(rgb(174, 147, 196), rgb(217, 160, 169));*/
-  background: green;
-}
-
 body {
+  background: green;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -35,15 +31,9 @@ body {
 
 /* Style the content */
 .content {
-  background-color: #ddd;
+  background-color: green;
   padding: 10px;
   height: 200px; /* Should be removed. Only for demonstration */
-}
-
-/* Style the footer */
-.footer {
-  background-color: #f1f1f1;
-  padding: 10px;
 }
 
 /* Ground */
