@@ -1,11 +1,9 @@
 /* Bulma Import */
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 
-#grad {
-  background-image: linear-gradient(rgb(174, 147, 196), rgb(217, 160, 169));
-}
-
 body {
+  background: green !important;
+  background-color: green;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -13,14 +11,12 @@ body {
 /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
-  background-color: #333;
 }
 
 /* Style the topnav links */
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -28,20 +24,17 @@ body {
 
 /* Change color on hover */
 .topnav a:hover {
-  background-color: #ddd;
   color: black;
 }
 
 /* Style the content */
 .content {
-  background-color: #ddd;
   padding: 10px;
   height: 200px; /* Should be removed. Only for demonstration */
 }
 
 /* Style the footer */
 .footer {
-  background-color: #f1f1f1;
   padding: 10px;
 }
 
