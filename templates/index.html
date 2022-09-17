@@ -11,10 +11,26 @@
 <body>
   BunnyBreak
 
-  <form action="/chat" method="post">
-    <button class="button is-primary">Primary</button>
+  <div class="block">
+    <article class="message is-dark">
+      <div class="message-header">
+        <p>Let's Chat!</p>
+        <button class="delete" aria-label="delete"></button>
+      </div>
+      <div class="message-body">
+        <form action="/chat" method="post">
+          <div class="block">
+            <textarea class="textarea is-primary" placeholder="Type here ..."></textarea>
+          </div>
+          <div class="block">
+            <button class="button is-primary">That's It</button>
+          </div>
+        </form>
+      </div>
+    </article>
+  </div>
 
-  </form>
+  
 
   <script src="static/script.js"></script>
 
