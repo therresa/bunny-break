@@ -1,11 +1,49 @@
 /* Bulma Import */
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 
+/* Animations */
+
+@-webkit-keyframes swinging{
+  0%{
+    -webkit-transform: rotate(10deg);
+  }
+  50%{
+    -webkit-transform: rotate(-5deg);
+  }
+  100%{
+    -webkit-transform: rotate(10deg);
+  }
+}
+
+@keyframes swinging {
+  0% {
+    transform: rotate(10deg);
+  }
+  50%{
+    transform: rotate(-5deg);
+  }
+  100%{
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(2.5px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
 body {
-  background: linear-gradient(rgb(195, 193, 255), rgb(255, 204, 254));
   height: 100vh;
-  margin: 0;
+  padding: 6rem 0rem 0rem 6rem;
   font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(rgb(195, 193, 255), rgb(255, 204, 254));
 }
 
 /* Style the top navigation bar */
@@ -30,7 +68,6 @@ body {
 /* Style the content */
 .content {
   padding: 10px;
-  height: 200px; /* Should be removed. Only for demonstration */
 }
 
 /* Style the footer */
@@ -38,10 +75,55 @@ body {
   padding: 10px;
 }
 
+#bunnyHead, #earRight, #earLeft, #eyeRight, #eyeLeft, #mouth, #nose {
+  z-index: 1000;
+  position: absolute;
+  bottom: 15rem;
+  left: 20rem;
+  scale: 70%;
+  animation: bounce 2s infinite;
+}
+
 #bunnyHead {
   position: absolute;
-  bottom: 600rem;
-  right: 600rem;
+  bottom: 15rem;
+  left: 20rem;
+  scale: 70%;
+}
+
+#mouth, #nose {
+  bottom: 14rem;
+  left: 23.5rem;
+}
+
+#mouth {
+  bottom: 18rem;
+}
+
+#eyeLeft, #eyeRight {
+  bottom: 20rem;
+  left: 23.3rem;
+}
+
+#eyeRight {
+  left: 27rem;
+}
+
+#earRight, #earLeft {
+  animation: swinging 2s infinite;
+  transform-origin: 0 90%;
+  bottom: 21rem;
+  left: 22rem;
+}
+
+#earLeft {
+  animation-direction: reverse;
+  left: 27rem;
+}
+
+#nose {
+  bottom: 19rem;
+  left: 25rem;
 }
 
 /* Ground */
